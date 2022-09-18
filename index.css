@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.grid {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid div {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(216, 216, 216);
+  transition: ease 0.2s all;
+}
+.grid div:hover {
+  transform: scale(1.09);
+}
+.selected {
+  background-color: #0093E9;
+  background-image: linear-gradient(40deg, #35A8EC 0%, #80D0C7 100%);
+  pointer-events: none;
+  border: none !important;
+}
